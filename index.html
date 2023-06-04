@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form For Conference</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .container h2 {
+      text-align: center;
+    }
+
+    .container input[type="text"],
+    .container input[type="email"],
+    .container input[type="Phone number"],
+    .container input[type="Affiliation"],
+
+    .container input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .container input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+
+    .container input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Registration Form For Conference</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="phone number" placeholder="Phone number" required>
+      <input type="affiliation" placeholder="Affiliation" required>
+      Dietary:<br>
+      <input type="checkbox" name="Vegetarian" value="Vegetarian" tabindex="1">Vegetarian<br/>
+      <input type="checkbox" name="Vegan" value="Vegan" tabindex="1">Vegan<br/>
+      <input type="checkbox" name="Gluten-Free" value="Gluten-Free" tabindex="1">Gluten-Free<br/>
+      <select Workshop="Name">
+        <option value="v"> Conference Construct</option>
+        <option value="a"> The Filing Cabinet</option>
+        <option value="i"> Pros And Conference</option>
+        <option value="s"> Diversity Conference</option>
+      </select><br>
+      <input type="radio" name="Registration type" value="General-Attendee">General-Attendee
+      <input type="radio" name="Registration type" value="Student">Student
+      <input type="radio" name="Registration type" value="VIP">VIP<br/>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
